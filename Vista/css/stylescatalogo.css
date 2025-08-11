@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    color: #00008B;
+}
+
+.navbar-brand:hover{
+    color: #00008B;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #00008B;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.btn-outline-custom {
+    color: #00008B;
+    border: 2px solid #00008B;
+}
+
+.btn-outline-custom:hover {
+    background-color: #00008B;
+    color: white;
+}
+
+.main{
+    background: url(../img/fondo3.png)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.main h4{
+    font-weight: 700;
+}
+
+.btn1{
+    height: 45px;
+    width: 65%;
+    border: none;
+    outline: none;
+    background-color: #00008B;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn1:hover{
+    background-color: #00008B;
+    transition: 0.5s;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.card:hover{
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+transition: 0.5s;
+}
+
+.card{
+    margin: 20px;
+padding: 20px;
+background: white;
+box-shadow: 0 0 10px #00008B;
+}
+
+.img-fluid{
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.carrito-boton{
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact{
+    background-color: #00008B;
+    color: white;
+}
+
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+
+.contact input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline: none;
+    background: #00008B;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.contact::placeholder{
+    color: white;
+}
+
+.contact p{
+    margin: 0;
+}
+
+.product {
+  min-height: 370px;
+}
+
+
+.products-preview{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.products-preview .preview{
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+    max-width: 90%;
+}
+
+.products-preview .preview.active{
+    display: inline-block;
+}
+
+.products-preview .preview img{
+    height: 18rem;
+}
+
+.products-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+    color: #444;
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+
+.products-preview .preview .stars{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.products-preview .preview .stars i{
+    color: yellow;
+}
+
+.products-preview .preview .stars span{
+    color: #999;
+}
+
+.products-preview .preview p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.products-preview .preview .buttons3 {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.products-preview .preview .buttons3 a {
+    flex: 1 1 12rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.4rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: #f9f9f9;
+}
+
+.products-preview .preview .buttons3 a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.products-preview .preview .buttons3 a.cart {
+    background-color: #00008B;
+    color: #fff;
+    border: 1px solid #00008B;
+}
+
+.products-preview .preview .buttons3 a.cart:hover {
+    background-color: #00008B;
+}
+
+.products-preview .preview .buttons3 a.btn {
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #3498db;
+}
+
+.products-preview .preview .buttons3 a.btn:hover {
+    background-color: #2980b9;
+}
+
+.carrito-container {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    border: 2px solid #00008B;
+    padding: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  
+  
+  .alerta-contenedor {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+  }
+  
+  .alerta {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    animation: aparecer 0.5s ease, desaparecer 0.5s ease 2.5s forwards;
+    font-weight: bold;
+  }
+  
+  @keyframes aparecer {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes desaparecer {
+    to { opacity: 0; transform: translateY(-10px); }
+  }
+
+  
+  .contador-carrito {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menos-cantidad, .mas-cantidad, .eliminar-producto {
+  border: none;
+  padding: 5px 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menos-cantidad {
+  background-color: #ff9800;
+  color: white;
+}
+
+.mas-cantidad {
+  background-color: #4caf50;
+  color: white;
+}
+
+.eliminar-producto {
+  background-color: red;
+  color: white; /* X blanca */
+}
+
+
+
+
+
+.btn-pagar {
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-pagar:hover {
+    background-color: darkgreen;
+}
+
+.btn-vaciar{
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-vaciar:hover{
+    background-color: white;
+    color: red;
+}
+
+.facebook{
+    color: white;
+}
+
+.instagram{
+    color: white;
+}
+
+.x{
+    color: white;
+}
+
+

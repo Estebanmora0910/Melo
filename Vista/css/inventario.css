@@ -1,0 +1,135 @@
+th.textth {
+  color: black;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #1565c0;
+  color: black;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: black;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: navy;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.btn.editar {
+  background-color: #f0ad4e;
+}
+
+.btn.eliminar {
+  background-color: #d9534f;
+}
+
+.btn.agregar {
+  background-color: #5cb85c;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+.add-product-container {
+  text-align: center;
+}
+thead {
+  background-color: black;
+}
+
+thead th {
+  color: black;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: navy;
+  color: white;
+  font-weight: bold;
+}
+
+.btn.editar {
+  background-color: navy;
+}
+
+.btn.eliminar {
+  background-color: #d9534f;
+}
+
+.btn.agregar {
+  background-color: #5cb85c;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
+tr.th.textth{
+  color: black;
+}
